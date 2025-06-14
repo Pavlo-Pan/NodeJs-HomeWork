@@ -7,7 +7,7 @@ export const getAppController = async (req, res) => {
 };
 
 export const addAppController = async(req, res)=> {
-    const result = await categoriesService.addApp(req.body); // throw new Error()
+    const result = await appsService.addApp(req.body); // throw new Error()
 
     res.status(201).json(result);
 }
