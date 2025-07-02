@@ -7,6 +7,7 @@ import {
   printStudentInfo,
   Student,
   logMessage,
+    consoleName
 } from "./src/export";
 
 //work1.ts
@@ -47,3 +48,6 @@ printStudentInfo(student);
 //work6.ts
 const message: string = "Hello, this is a log message!";
 logMessage(message);
+
+//work7.ts
+consoleName("Pablo");
