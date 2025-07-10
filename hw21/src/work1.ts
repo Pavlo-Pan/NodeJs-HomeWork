@@ -1,2 +1,16 @@
-export const sumEvenNumbers = (numbers: number[]): number =>
-  numbers.filter(n => n % 2 === 0).reduce((sum, n) => sum + n, 0);
+export abstract class Animal {
+  abstract makeSound(): string;
+}
+
+export class Dog extends Animal {
+  makeSound(): string {
+    return "Bark";
+  }
+}
+
+export class Cat extends Animal {
+  makeSound(): string {
+    return "Meow";
+  }
+}
+

@@ -1,3 +1,15 @@
-export function makeTriple<T>(a: T, b: T, c: T): T[] {
-  return [a, b, c];
+export abstract class Media {
+  abstract play(): void;
+}
+
+export class Audio extends Media {
+  play(): void {
+    console.log("Playing audio");
+  }
+}
+
+export class Video extends Media {
+  play(): void {
+    console.log("Playing video");
+  }
 }
