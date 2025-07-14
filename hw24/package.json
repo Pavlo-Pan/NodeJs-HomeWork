@@ -1,25 +1,21 @@
 {
-  "name": "hw16",
+  "name": "homework24",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/main.js",
-    "dev": "nodemon main",
-    "build": "tsc",
-    "dev:watch": "concurrently \"tsc --watch\" \"nodemon dist/main.js\""
+    "start": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "description": "",
   "devDependencies": {
-    "nodemon": "^3.1.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "@types/express": "^4.17.21",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
-    "concurrently": "^9.2.0"
+    "express": "^4.19.2",
+    "ts-node": "^10.9.2"
   }
 }
